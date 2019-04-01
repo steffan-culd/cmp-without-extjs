@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model package="customdatabase" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM">
+	
+	
+	<!-- TABEL PRODUCTS-->
+	<object class="cdbProducts" table="cdb_products" extends="xPDOSimpleObject">
+		<field key="code" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        <field key="name" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        <field key="introtext" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        <field key="description" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        
+        <field key="size" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        
+        <field key="stock" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+        <field key="price" dbtype="decimal" precision="10,2" attributes="unsigned" phptype="float" null="false" default="0" />
+        
+        <field key="alias" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+        
+		<field key="createdon" dbtype="datetime" phptype="datetime" null="true"/>
+		<field key="createdby" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+		<field key="editedon" dbtype="datetime" phptype="datetime" null="true"/>
+		<field key="editedby" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+		
+		<aggregate alias="CreatedBy" class="modUser" local="createdby" foreign="id" cardinality="one" owner="foreign"/>
+		<aggregate alias="EditedBy" class="modUser" local="editedby" foreign="id" cardinality="one" owner="foreign"/>
+	</object>
+	
+	
+	<!-- TABEL PRODUCTIMAGES-->
+	<object class="cdbProductImages" table="cdb_product_images" extends="xPDOSimpleObject">
+        <field key="product_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+		<field key="image_name" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+		<field key="image_path" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+		<field key="image_alt" dbtype="varchar" precision="400" phptype="string" null="true" default="" />
+		
+		<field key="createdon" dbtype="datetime" phptype="datetime" null="true"/>
+		<field key="createdby" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+		<field key="editedon" dbtype="datetime" phptype="datetime" null="true"/>
+		<field key="editedby" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false" default="0" />
+		
+		<aggregate alias="CreatedBy" class="modUser" local="createdby" foreign="id" cardinality="one" owner="foreign"/>
+		<aggregate alias="EditedBy" class="modUser" local="editedby" foreign="id" cardinality="one" owner="foreign"/>
+	</object>
+    
+    
+	
+</model>
