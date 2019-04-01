@@ -24,3 +24,4 @@ MODX CMP without ExtJS
 6. adjust my-first-cmp.php
 - add/remove columns in list view
 - add/remove fields to be edited in edit
+- change css
