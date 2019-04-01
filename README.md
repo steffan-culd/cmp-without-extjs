@@ -19,7 +19,7 @@ MODX CMP without ExtJS
 5. create snippet from rebuildDatabase.php
 - parse schema and create classes
 - create tables
-- execute uncached on unpublished page
+- execute uncached on unpublished and uncached page (resource)
 
 6. adjust my-first-cmp.php
 - add/remove columns in list view
