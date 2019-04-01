@@ -1,0 +1,87 @@
+.custom-content{
+    padding:30px;
+    color:#555555;
+}
+
+.custom-content h2{
+    padding-bottom: 15px;
+
+}
+
+.custom-content .button{
+    padding: 10px 20px;
+    border: 2px solid #3697cd;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    background: linear-gradient(to right, #3697cd 50%, #FFF 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+}
+
+.custom-content .button:hover{
+    background-position: right bottom;
+    color:#3697cd;
+}
+
+.custom-content table{
+    min-width:600px;
+}
+
+.custom-content tr:nth-child(odd){
+    background-color:#F6F6F6;
+}
+
+
+.custom-content tr:nth-child(even){
+    background-color:#FFF;
+}
+
+.custom-content tr{
+    border-top:1px solid #C6C6C6;
+}
+
+.custom-content th{
+    
+    font-weight:bold;
+    border-bottom:2px solid #555555;
+}
+.custom-content td,.custom-content th{
+    padding:10px;
+}
+
+.custom-content textarea{
+    width:90%;
+    height:70px;
+    padding:15px;
+}
+
+.custom-content input{
+    width:90%;
+    padding: 13px 15px 10px;
+    font-size: 13px;
+}
+
+.custom-content ::-webkit-input-placeholder {
+    color:#C6C6C6;
+}
+
+.custom-content #paging{
+    margin:15px;
+}
+.custom-content #paging a{
+    background-color:#3697cd;
+    color:#FFF;
+    padding:5px 10px;
+}
+
+.custom-content .manage-button{
+    text-decoration:none;
+}
+
+.custom-content .manage-button:hover{
+    
+}
