@@ -3,12 +3,12 @@ MODX CMP without ExtJS
 
 /*---workflow---*/
 1. create namespace
-- url: domain.com/manager/?a=workspaces/namespace
+- url: domain.com/manager/?a=workspaces/namespace (in manager > top right > cog > namespaces)
 - name: customdatabase
 - core path: {core_path}components/customdatabase/
 
 2. create menu
-- url: domain.com/manager/?a=system/action (create menu)
+- url: domain.com/manager/?a=system/action  (in manager > top right > cog > menus > create menu)
 - namespace: customdatabase
 - action: my-first-cmp
 
