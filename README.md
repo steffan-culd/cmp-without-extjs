@@ -1,6 +1,8 @@
 # cmp-without-extjs
 MODX CMP without ExtJS
-
+based on:
+- https://docs.modx.com/revolution/2.x/developing-in-modx/advanced-development/custom-manager-pages/custom-manager-pages-in-2.3
+- https://docs.modx.com/revolution/2.x/case-studies-and-tutorials/developing-an-extra-in-modx-revolution
 /*---workflow---*/
 1. create namespace
 - url: domain.com/manager/?a=workspaces/namespace (in manager > top right > cog > namespaces)
