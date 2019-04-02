@@ -18,10 +18,10 @@ MODX CMP without ExtJS
 - core/components/customdatabase/model/customdatabase.mysql.schema.xml
 - more info at https://docs.modx.com/xpdo/2.x/getting-started/creating-a-model-with-xpdo/defining-a-schema/
 
-5. create snippet from rebuildDatabase.php
+5. create snippet from rebuildDatabase.php in manager
 - parse schema and create classes
 - create tables
-- execute [[!rebuildDatabase]] uncached on unpublished and uncached page (resource)
+- run [[!rebuildDatabase]] uncached on unpublished and uncached page (resource)
 
 6. adjust my-first-cmp.php
 - add/remove columns in list view
