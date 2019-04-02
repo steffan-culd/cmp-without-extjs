@@ -14,7 +14,9 @@ MODX CMP without ExtJS
 
 3. upload core/components/ folder
 
-4. edit schema (https://docs.modx.com/xpdo/2.x/getting-started/creating-a-model-with-xpdo/defining-a-schema/)
+4. edit schema 
+- core/components/customdatabase/model/customdatabase.mysql.schema.xml
+- more info at https://docs.modx.com/xpdo/2.x/getting-started/creating-a-model-with-xpdo/defining-a-schema/
 
 5. create snippet from rebuildDatabase.php
 - parse schema and create classes
