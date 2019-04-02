@@ -31,3 +31,7 @@ based on:
 - add/remove columns in list view
 - add/remove fields to be edited in edit
 - change css if needed
+
+7. front-end
+- create snippet from productOverview.php
+- run in content/template as [[productOverview]]
