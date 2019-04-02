@@ -10,6 +10,7 @@ based on:
 - url: domain.com/manager/?a=workspaces/namespace (in manager > top right > cog > namespaces)
 - name: customdatabase
 - core path: {core_path}components/customdatabase/
+- when the namespace name 'customdatabase' is used, all settings in the following steps are correct. If not, change accordingly!
 
 2. create menu
 - url: domain.com/manager/?a=system/action  (in manager > top right > cog > menus > create menu)
